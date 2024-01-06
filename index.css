@@ -66,6 +66,10 @@ body {
     padding: 8px 24px;
 }
 
+.btn:hover {
+    cursor: pointer !important;
+}
+
 .btn-primary {
     background:  #FDC435 !important;
     border: 2px solid #FDC435 !important;
@@ -222,3 +226,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+@media only screen and (max-width: 600px) {
+ 
+  }

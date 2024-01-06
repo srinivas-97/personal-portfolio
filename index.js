@@ -1,10 +1,10 @@
-function addProject(projectName, projectDescription){
+function addProject(projectName, projectDescription, projectLink){
     let template = `<div class="project-box shadow">
     <div class="project-text">
         <div class="project-content p-2">
             <p class="projects-title">${projectName}</p>
             <p class="projects-content">${projectDescription}</p>
-            <button class="view-project-button btn btn-default">View Project</button>
+            <a href="${projectLink}" target="_blank"><button class="view-project-button btn btn-default">View Project</button></a>
         </div>
     </div>
     
@@ -31,10 +31,12 @@ addProjectAction.onsubmit = function(event) {
     event.preventDefault();
     let projectName = document.getElementById("project-name");
     let projectDescription = document.getElementById("project-description");
-    addProject(projectName?.value, projectDescription?.value);
+    let projectLink = document.getElementById("project-link");
+    addProject(projectName?.value, projectDescription?.value, projectLink?.value);
     clearForm();
     document.getElementById("navItem2").click();
 }
+
 
 
 
