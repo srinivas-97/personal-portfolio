@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Madelyn Torff</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1" href="#about">
+                            About
+                        </a>
+                        <a class="nav-link" id="navItem2" href="#projects">Projects</a>
+                        <a class="nav-link" id="navItem3" href="#contacts">Contacts</a>
+                    </div>
+                </div>
+            </nav>
+            <section id= "about" class="row about-section">
+                <div class="col-sm-6 about-me">
+                    <div>
+                        <p class="about-role">UI/UX Designer</p>
+                        <p class="about-name">Hello,  my name is Madelyn Torff</p>
+                        <p class="about-description">Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
+                    </div>
+                    <div>
+                        <a href="#projects"><button type="button" class="btn btn-primary">Projects</button></a>
+                        <button type="button" class="btn btn-default ml-12">LinkedIn</button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <img class="protofolio-img" src="images/about-pic.svg">
+                </div>
+            </section>
+
+            <section class="row projects add-project-section section-background">
+                <h2 class="section-header"> Add Project</h2>
+                <div class="mx-auto">
+                <form id="addProjectForm" action="#projects">
+                    <div class="form-group">
+                      <label for="project-name">Project Name</label>
+                      <input type="text" class="form-control project-input" id="project-name" placeholder="Enter Project Name" minlength="2" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="project-link">Project link</label>
+                      <input type="text" class="form-control project-input" id="project-link project-input" placeholder="Enter Project Link"
+                      pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?">
+                    </div>
+                    <div class="form-group">
+                        <label for="project-description" class="">Description</label>
+                        <textarea class="form-control project-input rounded-0" id="project-description" minlength="8" rows="3" required></textarea>
+                      </div>
+                    <div class="form-group submit-project-button">
+                    <button type="submit" id= "addProject" class="btn btn-primary">Add</button>
+                    </div>
+                  </form>
+                  
+                </div>
+            </section>
+            <section id = "projects" class="row projects">
+            <h2 class="section-header"> Projects </h2>
+            <div id = "projectsSection" class="project-boxes">
+                <div class="project-box shadow">
+                    <div class="project-text">
+                        <div class="project-content p-2">
+                            <p class="projects-title">Project Name</p>
+                            <p class="projects-content">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                            <button class="view-project-button btn btn-default">View Project</button>
+                        </div>
+                    </div>
+                    
+                    <div class="project-image"><img src="images/project3.png"></div>
+                </div>
+                <div class="project-box shadow">
+                    <div class="project-text">
+                        <div class="project-content p-2">
+                            <p class="projects-title">Project Name</p>
+                            <p class="projects-content">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                            <button class="view-project-button btn btn-default">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-image"><img src="images/project2.png"></div>
+                </div>
+                <div class="project-box shadow">
+                    <div class="project-text">
+                        <div class="project-content p-2">
+                            <p class="projects-title">Project Name</p>
+                            <p class="projects-content">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                            <button class="view-project-button btn btn-default">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-image"><img src="images/project1.png"></div>
+                </div>
+                
+            </div>
+            </section>
+            <section id="contacts" class="contact-section section-background">
+                <div class="row">
+                    <div class="col-12 footer-icons">
+                        <div class="d-flex flex-row justify-content-center mb-4">
+                            <div class="contact-icon-container">
+                                <i class="fa-brands fa-instagram icon"></i>
+                            </div>
+                            <div class="contact-icon-container">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                            </div>
+                            <div class="contact-icon-container">
+                                <i class="fa-solid fa-envelope icon"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Copyright &copy; 2024. All rights reserved.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
